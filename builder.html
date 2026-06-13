@@ -9,7 +9,7 @@
    The whole tool is one HTML page with vanilla JS. No backend, no requests,
    no telemetry. The URL you generate is the URL you ship.
 
-       github.com/benchkit-labs/gapps-embed   ·   MIT-licensed
+       github.com/benchkit-labs/gapps   ·   MIT-licensed
 -->
 <html lang="en">
 <head>
@@ -515,12 +515,12 @@
   <!-- Preview pane -->
   <div class="preview-pane">
     <div class="preview-toolbar">
-      <div class="preview-url" id="preview-url">gapps-launcher.html</div>
+      <div class="preview-url" id="preview-url">launcher.html</div>
     </div>
     <div class="preview-scroll">
       <div class="preview-box" id="preview-box">
         <div class="preview-dims" id="preview-dims" aria-hidden="true"></div>
-        <iframe id="preview" src="gapps-launcher.html" title="Live embed preview"></iframe>
+        <iframe id="preview" src="launcher.html" title="Live embed preview"></iframe>
       </div>
     </div>
   </div>
@@ -530,7 +530,7 @@
 <div class="toast" id="toast"></div>
 
 <script>
-  const BASE = 'gapps-launcher.html';
+  const BASE = 'launcher.html';
 
   function buildURL() {
     const params = new URLSearchParams();

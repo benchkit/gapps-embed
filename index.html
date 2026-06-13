@@ -6,7 +6,7 @@
    This is one HTML page, vanilla JS, one PNG sprite. No framework, no build.
    Drop the iframe on any site, theme it via three URL params, ship.
    Documentation, the actual source, and contribution guide:
-       github.com/benchkit-labs/gapps-embed   ·   MIT-licensed
+       github.com/benchkit-labs/gapps   ·   MIT-licensed
 -->
 <html lang="en">
 <head>
@@ -874,9 +874,9 @@
   <h1>Gapps Embed</h1>
   <span class="ver">v1.0.0</span>
   <nav aria-label="Primary">
-    <a href="gapps-launcher.html">Launcher</a>
-    <a href="gapps-builder.html">Builder</a>
-    <a href="https://github.com/benchkit-labs/gapps-embed">GitHub</a>
+    <a href="launcher.html">Launcher</a>
+    <a href="builder.html">Builder</a>
+    <a href="https://github.com/benchkit-labs/gapps">GitHub</a>
   </nav>
 </header>
 
@@ -890,8 +890,8 @@
   <h2>Embed <strong>Google apps</strong> anywhere.</h2>
   <p>A lightweight, themeable toolkit for embedding a Google apps grid on any website — no build step, one iframe, zero tracking.</p>
   <div class="hero-actions">
-    <a href="gapps-launcher.html" class="btn-primary">Try the launcher</a>
-    <a href="gapps-builder.html" class="btn-secondary">Build your embed</a>
+    <a href="launcher.html" class="btn-primary">Try the launcher</a>
+    <a href="builder.html" class="btn-secondary">Build your embed</a>
     <a href="#install" class="btn-secondary">Install in 3 steps</a>
   </div>
 </section>
@@ -939,7 +939,7 @@
     <div class="demo-skeleton" aria-hidden="true"></div>
     <iframe
       id="demo-iframe"
-      src="gapps-launcher.html?tile=%231E3147&amp;text=%233CDCC0&amp;hover=%233CDCC0&amp;texthover=%230E1B2A"
+      src="launcher.html?tile=%231E3147&amp;text=%233CDCC0&amp;hover=%233CDCC0&amp;texthover=%230E1B2A"
       title="Gapps Embed launcher — themed demo"
       loading="lazy"
       onload="document.getElementById('demo-frame').classList.add('is-loaded')"></iframe>
@@ -1010,7 +1010,7 @@ iframe.contentWindow.postMessage({
         <div class="step-num">1</div>
         <div class="step-body">
           <h4>Pick your apps, theme, and size</h4>
-          <p>Open the <a href="gapps-builder.html">Builder</a>, choose which apps to show, pick a preset theme or fine-tune the colors. Drag the preview's bottom-right corner to the height that fits your layout — the live size shows as you drag.</p>
+          <p>Open the <a href="builder.html">Builder</a>, choose which apps to show, pick a preset theme or fine-tune the colors. Drag the preview's bottom-right corner to the height that fits your layout — the live size shows as you drag.</p>
         </div>
       </li>
       <li>
@@ -1018,9 +1018,9 @@ iframe.contentWindow.postMessage({
         <div class="step-body">
           <h4>Copy the embed code</h4>
           <p>Hit <strong>Copy embed code</strong>. You get a full <code>&lt;iframe&gt;</code> snippet with your apps, theme, and the height you dragged to all baked in — width stays <code>100%</code> so it flexes to fit wherever you paste it.</p>
-          <pre><code>&lt;iframe src="https://gapps.benchkit-labs.dev/gapps-launcher.html?apps=mail,drive,docs&amp;tile=%23ffffff"
+          <pre><code>&lt;iframe src="https://gapps.benchkit-labs.dev/launcher.html?apps=mail,drive,docs&amp;tile=%23ffffff"
         style="border:none; width:100%; height:520px;"&gt;&lt;/iframe&gt;</code></pre>
-          <p style="margin-top:10px;font-size:13px;color:var(--ink-mute);">This URL always serves the latest release. For production, pin to a version with a CDN — e.g. <code style="font-size:12px;color:var(--teal-bright);">cdn.jsdelivr.net/gh/benchkit-labs/gapps-embed@v1.0.0/…</code></p>
+          <p style="margin-top:10px;font-size:13px;color:var(--ink-mute);">This URL always serves the latest release. For production, pin to a version with a CDN — e.g. <code style="font-size:12px;color:var(--teal-bright);">cdn.jsdelivr.net/gh/benchkit-labs/gapps@v1.0.0/…</code></p>
         </div>
       </li>
       <li>
@@ -1033,8 +1033,8 @@ iframe.contentWindow.postMessage({
     </ol>
 
     <p class="install-foot">
-      That's it. <a href="gapps-builder.html">Open the Builder</a> to get started, or
-      <a href="https://github.com/benchkit-labs/gapps-embed" class="muted-link">read the source on GitHub</a>
+      That's it. <a href="builder.html">Open the Builder</a> to get started, or
+      <a href="https://github.com/benchkit-labs/gapps" class="muted-link">read the source on GitHub</a>
       if you'd rather self-host.
     </p>
   </div>
@@ -1049,8 +1049,8 @@ iframe.contentWindow.postMessage({
       <span class="card-badge badge-live">Live — v1.0.0</span>
       <h4>Launcher</h4>
       <p>Plain icon grid, identical in appearance to Google's own app launcher. Drop it into a sidebar or panel.</p>
-      <div class="card-embed">&lt;iframe src="…/gapps-launcher.html"&gt;&lt;/iframe&gt;</div>
-      <a href="gapps-launcher.html" class="card-link">Open launcher</a>
+      <div class="card-embed">&lt;iframe src="…/launcher.html"&gt;&lt;/iframe&gt;</div>
+      <a href="launcher.html" class="card-link">Open launcher</a>
     </div>
 
     <div class="card coming-soon">
@@ -1129,7 +1129,7 @@ iframe.contentWindow.postMessage({
 <section class="cta">
   <h3><span>Drop it in and go.</span></h3>
   <p>Gapps Embed is free, libre, and runs entirely in your browser — no build step, no server, no tracking. Open the source, fork it, or self-host.</p>
-  <a href="https://github.com/benchkit-labs/gapps-embed" class="btn-primary">View on GitHub</a>
+  <a href="https://github.com/benchkit-labs/gapps" class="btn-primary">View on GitHub</a>
 </section>
 
 </div><!-- /.content-well -->
@@ -1137,11 +1137,11 @@ iframe.contentWindow.postMessage({
 <footer>
   <p class="footer-org">Gapps Embed · 2026 · MIT · Free, libre, local</p>
   <p class="footer-links">
-    <a href="https://github.com/benchkit-labs/gapps-embed">Source</a>
+    <a href="https://github.com/benchkit-labs/gapps">Source</a>
     <span class="stat-sep">·</span>
-    <a href="https://github.com/benchkit-labs/gapps-embed/issues">Issues</a>
+    <a href="https://github.com/benchkit-labs/gapps/issues">Issues</a>
     <span class="stat-sep">·</span>
-    <a href="https://github.com/benchkit-labs/gapps-embed/blob/main/LICENSE">License</a>
+    <a href="https://github.com/benchkit-labs/gapps/blob/main/LICENSE">License</a>
   </p>
   <p class="footer-stats" aria-live="polite">
     <span class="stat" id="stat-weight">— KB</span>

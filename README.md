@@ -1,4 +1,4 @@
-[Gapps Embed](https://github.com/benchkit-labs/gapps-embed) · **README** · [Quick start](#quick-start) · [Configuration](#configuration-via-query-string)
+[Gapps Embed](https://github.com/benchkit-labs/gapps) · **README** · [Quick start](#quick-start) · [Configuration](#configuration-via-query-string)
 
 ---
 
@@ -25,7 +25,7 @@ Static HTML + JavaScript. No accounts. No analytics. No server-side anything.
 ## Quick start
 
 ```html
-<iframe src="https://gapps.benchkit-labs.dev/gapps-launcher.html"
+<iframe src="https://gapps.benchkit-labs.dev/launcher.html"
         style="border: none; width: 100%; height: 600px;"></iframe>
 ```
 
@@ -97,12 +97,12 @@ The live site URL (`gapps.benchkit-labs.dev`) always serves the latest `main`, s
 
 **Option 1: jsDelivr (fastest, recommended)**
 ```html
-<iframe src="https://cdn.jsdelivr.net/gh/benchkit-labs/gapps-embed@v1.0.0/gapps-launcher.html">
+<iframe src="https://cdn.jsdelivr.net/gh/benchkit-labs/gapps@v1.0.0/gapps-launcher.html">
 ```
 
 **Option 2: raw.githack.com**
 ```html
-<iframe src="https://rawcdn.githack.com/benchkit-labs/gapps-embed/v1.0.0/gapps-launcher.html">
+<iframe src="https://rawcdn.githack.com/benchkit-labs/gapps/v1.0.0/gapps-launcher.html">
 ```
 
 **Option 3: unpkg**
@@ -119,21 +119,21 @@ All three CDNs cache a tagged release indefinitely, so a pinned embed is frozen 
 You don't need a CDN. Clone the repo, edit `src/apps.js` to add/remove/relabel apps, and serve the files from any static host:
 
 ```bash
-git clone https://github.com/benchkit-labs/gapps-embed.git
-cd gapps-embed
+git clone https://github.com/benchkit-labs/gapps.git
+cd gapps
 # edit src/apps.js if you want a custom app list
 python -m http.server 8080
 ```
 
-That's the entire setup. Open `http://localhost:8080/gapps-launcher.html`.
+That's the entire setup. Open `http://localhost:8080/launcher.html`.
 
 ## What's in the box
 
 ```
-gapps-embed/
+gapps/
 ├── index.html                # Landing page
-├── gapps-launcher.html       # Presentation 1: plain icon grid
-├── gapps-builder.html        # Interactive embed-URL builder
+├── launcher.html             # Presentation 1: plain icon grid
+├── builder.html              # Interactive embed-URL builder
 ├── src/
 │   ├── apps.js               # Shared app inventory (the data core)
 │   ├── filter.js             # Shared filter pipeline (querystring → apps)
